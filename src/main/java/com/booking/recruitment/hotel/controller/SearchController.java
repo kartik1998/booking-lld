@@ -25,6 +25,7 @@ public class SearchController {
     switch (sortBy.toLowerCase()) {
       case "distance":
         return hotelService.getHotelsCloseToCityCenter(cityId);
+      // Made a mistake here. Instead of getAllHotels you should call getAllHotelsInCity  
       default:
         return hotelService.getAllHotels();
     }
